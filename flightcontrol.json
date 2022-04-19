@@ -1,0 +1,30 @@
+{
+  "environments": [
+    {
+      "id": "production",
+      "name": "Production",
+      "region": "eu-west-2",
+      "source": {
+        "branch": "main"
+      },
+      "services": [
+        {
+          "id": "chromium",
+          "name": "chromium",
+          "type": "fargate",
+          "cpu": 0.5,
+          "memory": 1024,
+          "domain": "chrome.dweet.com",
+          "dockerfilePath": "Dockerfile",
+          "dockerContext": ".",
+          "port": 3000,
+          "minInstances": 1,
+          "maxInstances": 1,
+          "envVariables": {
+            "MAX_CONCURRENT_SESSIONS": "20"
+          }
+        }
+      ]
+    }
+  ]
+}
