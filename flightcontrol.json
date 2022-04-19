@@ -21,7 +21,8 @@
           "minInstances": 1,
           "maxInstances": 1,
           "envVariables": {
-            "MAX_CONCURRENT_SESSIONS": "20"
+            "MAX_CONCURRENT_SESSIONS": "10",
+            "TOKEN": "f947a848-e675-413e-b4fe-407f87431d3d"
           }
         }
       ]
