@@ -19,8 +19,8 @@
           "dockerContext": ".",
           "healthCheckPath":  "/?token=f947a848-e675-413e-b4fe-407f87431d3d",
           "port": 3000,
-          "minInstances": 1,
-          "maxInstances": 1,
+          "minInstances": 0,
+          "maxInstances": 0,
           "envVariables": {
             "MAX_CONCURRENT_SESSIONS": "10",
             "TOKEN": "f947a848-e675-413e-b4fe-407f87431d3d"
